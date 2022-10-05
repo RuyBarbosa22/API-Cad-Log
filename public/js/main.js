@@ -84,8 +84,8 @@ function showSnackBar() {
   
   function entrar() {
     
-    var emailVar = email.value;
-    var senhaVar = senha.value;
+    var emailVar = emailLog.value;
+    var senhaVar = senhaLog.value;
   
     if (emailVar == "" || senhaVar == "") {
       snackbar.innerHTML = "É necessário preencher todos os campos"
@@ -124,7 +124,7 @@ function showSnackBar() {
                 showSnackBar();
   
                 setTimeout(function () {
-                    window.location.href = "./index.html";
+                    window.location.href = "./logado.html";
                 }, 1000); // apenas para exibir o loading
   
             });
