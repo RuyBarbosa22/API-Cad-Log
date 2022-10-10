@@ -1,7 +1,5 @@
 var usuarioModel = require("../models/usuarioModel");
 
-var sessoes = [];
-
 function listar(req, res) {
     usuarioModel.listar()
         .then(function (resultado) {

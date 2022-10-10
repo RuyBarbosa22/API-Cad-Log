@@ -12,8 +12,6 @@ function showSnackBar() {
 
   function cadastrar() {
 
-    //Recupere o valor da nova input pelo nome do id
-    // Agora vá para o método fetch logo abaixo
     var nomeVar = nome.value;
     var emailVar = email.value;
     var telVar = tel.value;
@@ -23,8 +21,7 @@ function showSnackBar() {
   
         snackbar.innerHTML = "É necessário preecher todos os campos!";
         showSnackBar();
-        
-        // finalizarAguardar();
+
         return false;
     }
   
@@ -64,22 +61,6 @@ function showSnackBar() {
     });
   
     return false;
-  }
-  
-  function validarSessao() {
-    // aguardar();
-  
-    var email = sessionStorage.EMAIL_USUARIO;
-    var nome = sessionStorage.NOME_USUARIO;
-  
-    if (email != null && nome != null) {
-        // window.alert(`Seja bem-vindo, ${nome}!`);
-        b_usuario.innerHTML = nome;
-  
-        // finalizarAguardar();
-    } else {
-        window.location = "../login.html";
-    }
   }
   
   function entrar() {
